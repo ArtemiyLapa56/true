@@ -3,101 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>сылки на все соцсети</title>
-       <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; } header { background-color: #333; color: white; text-align: center; padding: 10px 0; } nav { background-color: #444; text-align: center; padding: 10px 0; } nav a { color: white; text-decoration: none; margin: 0 10px; } section { max-width: 800px; margin: 0 auto; padding: 20px; } article { background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } iframe { max-width: 100%; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; text-align: center; } iframe:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } img:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } iframe { float: left; margin-right: 20px; } h1 { float: right; } .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; } img { max-width: 100%; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; float: right; } img:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+    <title>Ссылки на все соцсети</title>
+    <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-nav {
-    background-color: #444;
-    text-align: center;
-    padding: 10px 0;
-}
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: all 0.3s;
+        }
 
-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        nav a:hover {
+            transform: scale(1.1);
+        }
 
-article {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-}
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Добавлено для центрирования текста */
+        }
 
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
+        .social-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
 
-img {
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
 
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-a {
-    text-decoration:none;
-    color:#444;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-    
+        .social-links a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <a href="index.html">Вернуться на главную</a>
-    <h2>заходите к нам в дескирд и в тг а также в скайп </h2>
-    <a href="https://discord.gg/ZKhWuXjZcp" >Дискорд</a>
-    <a href="https://t.me/egaisChZnakINFO" >ТГ</a>
-    <a href="https://join.skype.com/IQdeDBw1Jac" >Скайп</a>
+    <header>
+        <h1>Социальные Сети</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Вернуться на главную</a>
+    </nav>
+
+    <section>
+        <h2>Заходите к нам в Discord, Telegram и Skype</h2>
+        
+        <div class="social-links">
+            <a href="https://discord.gg/ZKhWuXjZcp">Discord</a>
+            <a href="https://t.me/egaisChZnakINFO">Telegram</a>
+            <a href="https://join.skype.com/IQdeDBw1Jac">Skype</a>
+        </div>
+    </section>
 </body>
 </html>
