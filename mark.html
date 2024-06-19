@@ -1,0 +1,64 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сформирование наборов</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; } header { background-color: #333; color: white; text-align: center; padding: 10px 0; } nav { background-color: #444; text-align: center; padding: 10px 0; } nav a { color: white; text-decoration: none; margin: 0 10px; } section { max-width: 800px; margin: 0 auto; padding: 20px; } article { background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } iframe { max-width: 100%; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; text-align: center; } iframe:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } img:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } iframe { float: left; margin-right: 20px; } h1 { float: right; } .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; } img { max-width: 100%; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; float: right; } img:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h2>маркеровка наборов</h2>
+    </header>
+    <nav>
+        <a href="index.html">Вернуться на главную</a>
+    </nav>
+    <section>
+        <article>
+            <h2>маркеровка наборов:</h2>
+            <ol>
+                <li>Подать заявление на вступление в Ассоциацию «ГС1 РУС» через Национальный каталог в личном кабинете системы «Честный знак».</li>
+                <li>Получить код GTIN на набор.</li>
+                <li>Сформировать набор: нажать на кнопку «Добавить», выбрать «Набор», указать основные и обязательные данные в карточке набора.</li>
+                <li>Заказать код маркировки на набор (при необходимости — еще и на вложенные товары).</li>
+                <li>Получить коды Data Matrix в Станции управления заказами (СУЗ).</li>
+                <li>Распечатать и нанести коды маркировки на набор и товары.</li>
+                <li>Сформировать сведения о наборе и подать их в «Честный знак» одним из способов: через личный кабинет системы маркировки, путем загрузки файлов формата .XML или .CSV, через API.</li>
+            </ol>
+        </article>
+        <div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 999;">
+            <span style="position: absolute; top: 20px; right: 20px; color: white; font-size: 30px; cursor: pointer;" onclick="closeModal()">×</span>
+            <img id="modal-image" style="max-width: 80%; max-height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px;">
+        </div>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/47Z_FpCMODY?si=_vnzMdYaLn1JfBEu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <a href="https://xn--80ajghhoc2aj1c8b.xn--p1ai/">перейти на сайт Честный знак</a>
+
+        
+        
+            
+        </div>
+        <nav style="background-color: #444; text-align: center; padding: 10px 0;">
+            
+        </nav>
+    </section>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('modal').style.display = 'block';
+            document.getElementById('modal-image').src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
