@@ -1,137 +1,53 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сформирование наборов</title>
+    <title>маркеровка наборов</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; } header { background-color: #333; color: white; text-align: center; padding: 10px 0; } nav { background-color: #444; text-align: center; padding: 10px 0; } nav a { color: white; text-decoration: none; margin: 0 10px; } section { max-width: 800px; margin: 0 auto; padding: 20px; } article { background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } iframe { max-width: 100%; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; text-align: center; } iframe:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } img:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); } iframe { float: left; margin-right: 20px; } h1 { float: right; } .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; } img { max-width: 100%; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; float: right; } img:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
-        header {
-            background-color: #ff6f61;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            font-size: 1.5em;
-        }
-
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        article {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        iframe {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            display: block;
-            margin: 0 auto;
-        }
-
-        iframe:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            justify-content: center;
-        }
-
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        nav a:last-child {
-            margin-right: 0;
-        }
-
-        nav a:not(:last-child) {
-            margin-right: 20px;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-
+    
     </style>
 </head>
 <body>
     <header>
-        <h1>Сформирование наборов</h1>
+        <h2>маркеровка наборов</h2>
     </header>
     <nav>
         <a href="index.html">Вернуться на главную</a>
     </nav>
     <section>
         <article>
-          <h2>Зачем и как сформировать набор:</h2>
-          <ol>
-              <li>Наборы с маркированными товарами формируются в системе «Честный знак» для прослеживаемости движения товара и информирования покупателя.</li>
-              <li>Например, для формирования набора из трёх футболок разных цветов (красная, белая, жёлтая) необходимо подать сведения в «Честный знак» только о маркированных товарах и сформировать код идентификации набора.</li>
-              <li>При продаже на кассе достаточно отсканировать код идентификации набора, и сведения о маркированных товарах, находящихся в наборе, автоматически поступят в систему «Честный знак».</li>
-          </ol>
+            <h2>маркеровка наборов:</h2>
+            <ol>
+                <li>Подать заявление на вступление в Ассоциацию «ГС1 РУС» через Национальный каталог в личном кабинете системы «Честный знак».</li>
+                <li>Получить код GTIN на набор.</li>
+                <li>Сформировать набор: нажать на кнопку «Добавить», выбрать «Набор», указать основные и обязательные данные в карточке набора.</li>
+                <li>Заказать код маркировки на набор (при необходимости — еще и на вложенные товары).</li>
+                <li>Получить коды Data Matrix в Станции управления заказами (СУЗ).</li>
+                <li>Распечатать и нанести коды маркировки на набор и товары.</li>
+                <li>Сформировать сведения о наборе и подать их в «Честный знак» одним из способов: через личный кабинет системы маркировки, путем загрузки файлов формата .XML или .CSV, через API.</li>
+            </ol>
         </article>
         <div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 999;">
-          <span style="position: absolute; top: 20px; right: 20px; color: white; font-size: 30px; cursor: pointer;" onclick="closeModal()">×</span>
-          <img id="modal-image" style="max-width: 80%; max-height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px;">
-      </div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/wnMxnC_rHZU?si=o7AGFt3S9YhsxGtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <a href="https://xn--80ajghhoc2aj1c8b.xn--p1ai/">Перейти на сайт "Честный знак"</a>
-      <h1>Действия</h1>
-      <div class="image-gallery">
-          <img src="2024-06-19.png" style="max-width: 100%; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="openModal('2024-06-19.png')">
-      </div>
-      <nav>
-          <a href="mark.html">[Маркеровка]</a>
-          <a href="creator.html">[Ссылки на наши соцсети]</a>
-      </nav>
+            <span style="position: absolute; top: 20px; right: 20px; color: white; font-size: 30px; cursor: pointer;" onclick="closeModal()">×</span>
+            <img id="modal-image" style="max-width: 80%; max-height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px;">
+        </div>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/47Z_FpCMODY?si=_vnzMdYaLn1JfBEu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <a href="https://xn--80ajghhoc2aj1c8b.xn--p1ai/">перейти на сайт Честный знак</a>
+
+        
+        
+            
+        </div>
+        <nav style="background-color: #444; text-align: center; padding: 10px 0;">
+            
+        </nav>
     </section>
 
     <script>
