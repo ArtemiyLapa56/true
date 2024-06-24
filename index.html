@@ -61,6 +61,36 @@
         function closeModal() {
             document.getElementById('modal').style.display = 'none';
         }
+        window.onload = function() {
+            const onlineCount = document.getElementById('online-count');
+            
+            let count = 1; // Пользователь, который только что открыл страницу
+            updateCount(count);
+            
+            function updateCount(count) {
+                onlineCount.innerText = count;
+            }
+            
+            window.addEventListener('beforeunload', function() {
+                count--; // Уменьшаем счетчик при закрытии вкладки
+                updateCount(count);
+            });
+            
+            window.addEventListener('focus', function() {
+                count++; // Увеличиваем счетчик, когда пользователь активен на странице
+                updateCount(count);
+            });
+            
+            window.addEventListener('blur', function() {
+                count--; // Уменьшаем счетчик, когда пользователь неактивен на странице
+                updateCount(count);
+            });
+            
+            setInterval(function() {
+                count = Math.floor(Math.random() * 10); // Обновляем счетчик на случайное число пользователей (пример)
+                updateCount(count);
+            }, 5000); // Обновляем каждые 5 секунд (можно изменить интервал)
+        }
     </script>
 </body>
 </html>
